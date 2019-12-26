@@ -185,11 +185,9 @@ main()
 	int N, from, to;
 	cin >> N;
 	nodeOpt::Node *nodeArray[N];
-	for (int i=0;i<N;i++){
-		nodeArray[i] = nodeOpt::newDoublyCircularLinkedList(i+1);
-}
-	for (int i=1;i<=N-1;i++)
+	for (int i=0;i<N;i++)
 	{
+		nodeArray[i] = nodeOpt::newDoublyCircularLinkedList(i+1);
 		cin >> from >> to;
 		nodeOpt::insertAfter(&nodeArray[to-1],&nodeArray[from-1],to);
 	}
